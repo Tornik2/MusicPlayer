@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600;900&family=Montserrat:wght@500;600;700;900&family=Open+Sans:wght@400;600;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: rgb(210, 212, 214);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+    text-align: center;
+    position: relative;
+    background-color: rgb(227, 230, 229);
+}
+
+.img-container {
+    width: 80%;
+    margin: auto;
+    height: 250px;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    background-color: rgb(151, 69, 69);
+    background-size: cover;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.title {
+    margin-top: 230px;
+    margin-bottom: 0.2em;
+    font-weight: 400;
+    font-size: 1.6rem;
+}
+
+h2 {
+    margin: 0 0 2em;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+.progress {
+    width: 90%;
+    margin: auto;
+    height: 5px;
+    background-color: aliceblue;
+    border: gray solid 0.2px;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.time-now, 
+.total-time {
+    position: absolute;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.time-now {
+    left: 0;
+    top: -1.4em;
+}
+
+.total-time {
+    right: 0;
+    top: -1.4em;
+}
+
+.time-passed-bar {
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    z-index: 1;
+}
+
+.play-section {
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.fa-solid {
+    cursor: pointer;
+    color: rgb(89, 90, 92);
+    user-select: none;
+}
+
+.fa-solid:hover {
+    filter: brightness(40%);
+}
+
+.fa-play,
+.fa-pause {
+    font-size: 3rem;
+}
+
+.fa-forward,
+.fa-backward {
+    font-size: 2rem;
+}
+
+
